@@ -1,0 +1,15 @@
+{
+    "manifest_version": 2,
+
+    "name": "NFA inject pop-up",
+    "description": "This extension will append script to work showModalDialog.",
+    "version": "1.0",
+
+    "content_scripts": [
+        {
+            "run_at" :"document_start",
+            "matches": ["https://sistemas.sefaz.ba.gov.br/*"],
+            "js": ["script.js"]
+        }
+    ]
+}
